@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Fundacja Małe Wielkie Serce</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff;
+      font-family: Georgia, serif;
+      color: #000;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: rgba(250, 128, 114, 0.7);
+      padding: 10px 20px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header img {
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    /* Telefony */
+    @media (max-width: 600px) {
+      .header img {
+        height: 60px;
+      }
+    }
+
+    /* Duże ekrany */
+    @media (min-width: 1024px) {
+      .header img {
+        height: 100px;
+      }
+    }
+
+    .header h1 {
+      color: #000;
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .contact {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .contact a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .support-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #fa8072;
+      color: white;
+      font-family: Georgia, serif;
+      font-size: 14px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .support-button:hover {
+      background-color: #e66a5a;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 20px;
+      gap: 40px;
+      background-image: url("tlo.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 300px;
+      color: #fa8072;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 1.6;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .image {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    #wsparcie {
+      background-color: #fef1ef;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #wsparcie h2 {
+      color: #000;
+      font-family: Georgia, serif;
+    }
+
+    #wsparcie p {
+      color: #333;
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .wsparcie-konto {
+      color: #000;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer p {
+      color: #fa8072;
+      font-family: Georgia, serif;
+      font-size: 24px;
+      font-weight: bold;
+      animation: pulse 2s infinite;
+      margin: 0;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="logo4.png" alt="Logo fundacji">
+    <div>
+      <h1>Fundacja Małe Wielkie Serce</h1>
+      <div class="contact">
+        <p><a href="mailto:fundacjamws@gmail.com">fundacjamws@gmail.com</a></p>
+        <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+        <a href="#wsparcie" class="support-button">Wesprzyj nas</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="text">
+      Fundacja Małe Wielkie Serce to fundacja działająca z myślą o dzieciach, które najbardziej potrzebują wsparcia i troski. Jej misją jest niesienie realnej pomocy najmłodszym z rodzin znajdujących się w trudnej sytuacji życiowej – ubóstwie, wykluczeniu czy braku stabilności.
+      <br><br>
+      Poprzez swoją działalność, fundacja otacza dzieci ciepłem, troską i miłością – tym, czego często brakuje im na co dzień. Organizujemy zbiórki, akcje charytatywne, zajęcia edukacyjne i integracyjne, a także zapewniamy wsparcie materialne i emocjonalne. Wszystko po to, by każde dziecko – niezależnie od pochodzenia – mogło rozwijać swoje skrzydła, marzyć i czuć się bezpieczne.
+      <br><br>
+      Małe Wielkie Serce to więcej niż pomoc – to gest solidarności, miejsce, gdzie liczy się każde dziecięce marzenie i każda łza może zamienić się w uśmiech.
+    </div>
+    <div class="image">
+      <img src="zdjecie.png" alt="Dzieci otoczone troską fundacji">
+    </div>
+  </div>
+
+  <div id="wsparcie">
+    <h2>Wesprzyj naszą fundację</h2>
+    <p>
+      Każda wpłata ma znaczenie. Twoje wsparcie pozwala nam organizować pomoc dla dzieci,
+      które najbardziej tego potrzebują. Możesz wesprzeć nas jednorazową darowizną lub dołączyć
+      do naszych comiesięcznych darczyńców.
+    </p>
+    <div class="wsparcie-konto">
+      Numer konta: 12 3456 7890 1234 5678 9012 3456<br>
+      Tytuł przelewu: Darowizna na cele statutowe
+    </div>
+    <br>
+    <a href="https://zrzutka.pl" target="_blank" class="support-button">Wesprzyj nas na zrzutka.pl</a>
+  </div>
+
+  <div class="footer">
+    <p>Zostań wolontariuszem</p>
+  </div>
+
+</body>
+</html>
